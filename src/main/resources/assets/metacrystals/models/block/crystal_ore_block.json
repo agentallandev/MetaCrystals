@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "metacrystals:blocks/crystal_ore",
+    "particle": "metacrystals:blocks/crystal_ore"
+  }
+}

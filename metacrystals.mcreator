@@ -1,0 +1,193 @@
+{
+  "mod_elements": [
+    {
+      "name": "HasteCrystalItemInHandTick",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "haste_crystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HasteCrystal",
+      "type": "item",
+      "sortid": 2,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "haste_crystal"
+    },
+    {
+      "name": "AquaticCrystal",
+      "type": "item",
+      "sortid": 3,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "aquatic_crystal"
+    },
+    {
+      "name": "AquaticCrystalItemInHandTick",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "aquatic_crystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AcrobaticsCrystal",
+      "type": "item",
+      "sortid": 4,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "acrobatics_crystal"
+    },
+    {
+      "name": "AcrobaticsCrystalItemInHandTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "acrobatics_crystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FightingCrystal",
+      "type": "item",
+      "sortid": 1,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "fighting_crystal"
+    },
+    {
+      "name": "FightingCrystalItemInHandTick",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "fighting_crystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AgilityCrystal",
+      "type": "item",
+      "sortid": 5,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "agility_crystal"
+    },
+    {
+      "name": "AgilityCrystalItemInHandTick",
+      "type": "procedure",
+      "sortid": 10,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "agility_crystal_item_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CrystalCreativeTab",
+      "type": "tab",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_creative_tab"
+    },
+    {
+      "name": "CrystalOreBlock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore_block"
+    },
+    {
+      "name": "PowerCrystal",
+      "type": "item",
+      "sortid": 13,
+      "compiles": false,
+      "locked_code": false,
+      "registry_name": "power_crystal"
+    },
+    {
+      "name": "CrystalOreLootTable",
+      "type": "loottable",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_ore_loot_table"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.metacrystals.acrobatics_crystal": "Acrobatics Crystal",
+      "item.metacrystals.power_crystal": "Power Crystal",
+      "item.metacrystals.agility_crystal": "Agility Crystal",
+      "block.metacrystals.crystal_ore_block": "Crystal Ore Block",
+      "item.metacrystals.fighting_crystal": "Fighting Crystal",
+      "item.metacrystals.haste_crystal": "Mining Crystal",
+      "itemGroup.tabcrystal_creative_tab": "Crystal Creative Tab",
+      "item.metacrystals.aquatic_crystal": "Aquatic Crystal"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "metacrystals",
+    "modName": "MetaCrystals",
+    "version": "1.0.0",
+    "author": "Development, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.18.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.github.agentallandev.metacrystals",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200233511
+}
