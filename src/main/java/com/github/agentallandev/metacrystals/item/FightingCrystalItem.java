@@ -1,6 +1,12 @@
 
 package com.github.agentallandev.metacrystals.item;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.Rarity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.Entity;
+
 import com.github.agentallandev.metacrystals.procedures.FightingCrystalItemInHandTickProcedure;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
 

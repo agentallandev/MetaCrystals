@@ -4,7 +4,7 @@
       "name": "HasteCrystalItemInHandTick",
       "type": "procedure",
       "sortid": 6,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "haste_crystal_item_in_hand_tick",
       "metadata": {
@@ -20,7 +20,7 @@
       "name": "HasteCrystal",
       "type": "item",
       "sortid": 2,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "haste_crystal"
     },
@@ -28,7 +28,7 @@
       "name": "AquaticCrystal",
       "type": "item",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aquatic_crystal"
     },
@@ -36,7 +36,7 @@
       "name": "AquaticCrystalItemInHandTick",
       "type": "procedure",
       "sortid": 7,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "aquatic_crystal_item_in_hand_tick",
       "metadata": {
@@ -52,7 +52,7 @@
       "name": "AcrobaticsCrystal",
       "type": "item",
       "sortid": 4,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "acrobatics_crystal"
     },
@@ -60,7 +60,7 @@
       "name": "AcrobaticsCrystalItemInHandTick",
       "type": "procedure",
       "sortid": 8,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "acrobatics_crystal_item_in_hand_tick",
       "metadata": {
@@ -76,7 +76,7 @@
       "name": "FightingCrystal",
       "type": "item",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fighting_crystal"
     },
@@ -84,7 +84,7 @@
       "name": "FightingCrystalItemInHandTick",
       "type": "procedure",
       "sortid": 9,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "fighting_crystal_item_in_hand_tick",
       "metadata": {
@@ -100,7 +100,7 @@
       "name": "AgilityCrystal",
       "type": "item",
       "sortid": 5,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "agility_crystal"
     },
@@ -108,7 +108,7 @@
       "name": "AgilityCrystalItemInHandTick",
       "type": "procedure",
       "sortid": 10,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "agility_crystal_item_in_hand_tick",
       "metadata": {
@@ -140,7 +140,7 @@
       "name": "PowerCrystal",
       "type": "item",
       "sortid": 13,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "power_crystal"
     },
@@ -151,6 +151,14 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_ore_loot_table"
+    },
+    {
+      "name": "MeteorTypeOne",
+      "type": "structure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "meteor_type_one"
     }
   ],
   "variable_elements": [],

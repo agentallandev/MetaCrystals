@@ -32,6 +32,7 @@ import java.util.function.BiConsumer;
 
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModItems;
+import com.github.agentallandev.metacrystals.init.MetacrystalsModFeatures;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModBlocks;
 
 @Mod("metacrystals")
@@ -48,6 +49,8 @@ public class MetacrystalsMod {
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 		MetacrystalsModBlocks.REGISTRY.register(bus);
 		MetacrystalsModItems.REGISTRY.register(bus);
+
+		MetacrystalsModFeatures.REGISTRY.register(bus);
 
 	}
 
