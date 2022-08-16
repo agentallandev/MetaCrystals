@@ -1,0 +1,12 @@
+{
+  "_fv": 33,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "DELETE",
+    "keyBindingName": "Cycle Crystal Down",
+    "keyBindingCategoryKey": "metacrystals",
+    "onKeyPressed": {
+      "name": "CrystalCycleDownOnKeyPress"
+    }
+  }
+}

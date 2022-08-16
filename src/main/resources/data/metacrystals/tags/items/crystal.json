@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "metacrystals:agility_crystal",
+    "metacrystals:haste_crystal",
+    "metacrystals:acrobatics_crystal",
+    "metacrystals:aquatic_crystal",
+    "metacrystals:fighting_crystal"
+  ]
+}

@@ -3,7 +3,7 @@
     {
       "name": "HasteCrystalItemInHandTick",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "haste_crystal_item_in_hand_tick",
@@ -14,28 +14,31 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "HasteCrystal",
       "type": "item",
-      "sortid": 2,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "haste_crystal"
+      "registry_name": "haste_crystal",
+      "path": "~/Crystals"
     },
     {
       "name": "AquaticCrystal",
       "type": "item",
-      "sortid": 3,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "aquatic_crystal"
+      "registry_name": "aquatic_crystal",
+      "path": "~/Crystals"
     },
     {
       "name": "AquaticCrystalItemInHandTick",
       "type": "procedure",
-      "sortid": 7,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "registry_name": "aquatic_crystal_item_in_hand_tick",
@@ -46,20 +49,22 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "AcrobaticsCrystal",
       "type": "item",
-      "sortid": 4,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "acrobatics_crystal"
+      "registry_name": "acrobatics_crystal",
+      "path": "~/Crystals"
     },
     {
       "name": "AcrobaticsCrystalItemInHandTick",
       "type": "procedure",
-      "sortid": 8,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "registry_name": "acrobatics_crystal_item_in_hand_tick",
@@ -70,20 +75,22 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "FightingCrystal",
       "type": "item",
-      "sortid": 1,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "fighting_crystal"
+      "registry_name": "fighting_crystal",
+      "path": "~/Crystals"
     },
     {
       "name": "FightingCrystalItemInHandTick",
       "type": "procedure",
-      "sortid": 9,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "registry_name": "fighting_crystal_item_in_hand_tick",
@@ -94,20 +101,22 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "AgilityCrystal",
       "type": "item",
-      "sortid": 5,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "agility_crystal"
+      "registry_name": "agility_crystal",
+      "path": "~/Crystals"
     },
     {
       "name": "AgilityCrystalItemInHandTick",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "registry_name": "agility_crystal_item_in_hand_tick",
@@ -118,66 +127,313 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Procedures"
     },
     {
       "name": "CrystalCreativeTab",
       "type": "tab",
-      "sortid": 11,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_creative_tab"
+      "registry_name": "crystal_creative_tab",
+      "path": "~/Misc"
     },
     {
       "name": "CrystalOreBlock",
       "type": "block",
-      "sortid": 12,
+      "sortid": 1,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_ore_block"
+      "registry_name": "crystal_ore_block",
+      "path": "~/Misc"
     },
     {
       "name": "PowerCrystal",
       "type": "item",
-      "sortid": 13,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "power_crystal"
+      "registry_name": "power_crystal",
+      "path": "~/Crystals"
     },
     {
       "name": "CrystalOreLootTable",
       "type": "loottable",
-      "sortid": 14,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_ore_loot_table"
+      "registry_name": "crystal_ore_loot_table",
+      "path": "~/Crystals"
     },
     {
       "name": "MeteorTypeOne",
       "type": "structure",
-      "sortid": 15,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "meteor_type_one"
+      "registry_name": "meteor_type_one",
+      "path": "~/Misc"
+    },
+    {
+      "name": "Tier6WatchGUI",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_6_watch_gui",
+      "path": "~/Screens and Overlays"
+    },
+    {
+      "name": "CrystalCycleUpOnKeyPressed",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_cycle_up_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CrystalWatchRightclicked",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_watch_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Crystals"
+    },
+    {
+      "name": "CrystalCycleDownOnKeyPress",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_cycle_down_on_key_press",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "CrystalCycleUp",
+      "type": "keybind",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_cycle_up",
+      "path": "~/Misc"
+    },
+    {
+      "name": "CrystalCycleDown",
+      "type": "keybind",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_cycle_down",
+      "path": "~/Misc"
+    },
+    {
+      "name": "CrystalTypeDisplayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_type_display_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Crystals"
+    },
+    {
+      "name": "CrystalTypeDisplay",
+      "type": "overlay",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_type_display",
+      "path": "~/Screens and Overlays"
+    },
+    {
+      "name": "WatchInHandTick",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_in_hand_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "IsValidCrystalItem",
+      "type": "procedure",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_valid_crystal_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
+    },
+    {
+      "name": "MagicCrystal",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "magic_crystal",
+      "path": "~/Crystals"
+    },
+    {
+      "name": "Tier6Watch",
+      "type": "item",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_6_watch",
+      "path": "~/Watches"
+    },
+    {
+      "name": "CrystalWatch",
+      "type": "tag",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_watch",
+      "path": "~/Misc"
+    },
+    {
+      "name": "AbilityCrystal",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ability_crystal",
+      "path": "~/Misc"
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "CrystalTypeActive",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "1.0"
+    },
+    {
+      "name": "WatchTier",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "6.0"
+    },
+    {
+      "name": "CrystalTypeName",
+      "type": "string",
+      "scope": "player_persistent",
+      "value": "\"\""
+    },
+    {
+      "name": "WorkingSlot",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.metacrystals.acrobatics_crystal": "Acrobatics Crystal",
       "item.metacrystals.power_crystal": "Power Crystal",
-      "item.metacrystals.agility_crystal": "Agility Crystal",
       "block.metacrystals.crystal_ore_block": "Crystal Ore Block",
+      "item.metacrystals.tier_6_watch": "Crystal Watch",
       "item.metacrystals.fighting_crystal": "Fighting Crystal",
       "item.metacrystals.haste_crystal": "Mining Crystal",
       "itemGroup.tabcrystal_creative_tab": "Crystal Creative Tab",
-      "item.metacrystals.aquatic_crystal": "Aquatic Crystal"
+      "item.metacrystals.aquatic_crystal": "Aquatic Crystal",
+      "key.metacrystals.crystal_cycle_down": "Cycle Crystal Down",
+      "key.metacrystals.crystal_cycle_up": "Cycle Crystal Up",
+      "item.metacrystals.magic_crystal": "Magic Crystal",
+      "item.metacrystals.agility_crystal": "Agility Crystal"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Watches",
+        "children": []
+      },
+      {
+        "name": "Screens and Overlays",
+        "children": []
+      },
+      {
+        "name": "Procedures",
+        "children": []
+      },
+      {
+        "name": "Misc",
+        "children": []
+      },
+      {
+        "name": "Crystals",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "metacrystals",

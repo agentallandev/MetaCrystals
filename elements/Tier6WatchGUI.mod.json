@@ -1,0 +1,148 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 206,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Crystal Watch",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Crystal Watch",
+          "x": 182,
+          "y": 22
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:PowerCrystal"
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 205,
+          "y": 76
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "IsValidCrystalItem"
+          },
+          "name": "Slot #1",
+          "x": 205,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "IsValidCrystalItem"
+          },
+          "name": "Slot #2",
+          "x": 241,
+          "y": 58
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "IsValidCrystalItem"
+          },
+          "name": "Slot #3",
+          "x": 241,
+          "y": 94
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "IsValidCrystalItem"
+          },
+          "name": "Slot #4",
+          "x": 205,
+          "y": 116
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "IsValidCrystalItem"
+          },
+          "name": "Slot #5",
+          "x": 169,
+          "y": 94
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": "CUSTOM:MagicCrystal"
+          },
+          "id": 6,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #6",
+          "x": 169,
+          "y": 58
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 12,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

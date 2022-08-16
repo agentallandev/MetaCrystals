@@ -1,10 +1,14 @@
 {
   "item.metacrystals.acrobatics_crystal": "Acrobatics Crystal",
   "item.metacrystals.power_crystal": "Power Crystal",
-  "item.metacrystals.agility_crystal": "Agility Crystal",
   "block.metacrystals.crystal_ore_block": "Crystal Ore Block",
+  "item.metacrystals.tier_6_watch": "Crystal Watch",
   "item.metacrystals.fighting_crystal": "Fighting Crystal",
   "item.metacrystals.haste_crystal": "Mining Crystal",
   "itemGroup.tabcrystal_creative_tab": "Crystal Creative Tab",
-  "item.metacrystals.aquatic_crystal": "Aquatic Crystal"
+  "item.metacrystals.aquatic_crystal": "Aquatic Crystal",
+  "key.metacrystals.crystal_cycle_down": "Cycle Crystal Down",
+  "key.metacrystals.crystal_cycle_up": "Cycle Crystal Up",
+  "item.metacrystals.magic_crystal": "Magic Crystal",
+  "item.metacrystals.agility_crystal": "Agility Crystal"
 }
