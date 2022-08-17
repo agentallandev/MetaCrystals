@@ -34,6 +34,7 @@ import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModItems;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModFeatures;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModBlocks;
+import com.github.agentallandev.metacrystals.init.MetacrystalsModBlockEntities;
 
 @Mod("metacrystals")
 public class MetacrystalsMod {
@@ -50,6 +51,7 @@ public class MetacrystalsMod {
 		MetacrystalsModBlocks.REGISTRY.register(bus);
 		MetacrystalsModItems.REGISTRY.register(bus);
 
+		MetacrystalsModBlockEntities.REGISTRY.register(bus);
 		MetacrystalsModFeatures.REGISTRY.register(bus);
 
 	}

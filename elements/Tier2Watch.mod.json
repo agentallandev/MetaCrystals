@@ -29,8 +29,8 @@
     "guiBoundTo": "Tier2WatchGUI",
     "inventorySize": 3,
     "inventoryStackSize": 1,
-    "onItemInUseTick": {
-      "name": "WatchInHandTick"
+    "onItemInInventoryTick": {
+      "name": "Tier2WatchEffects"
     },
     "isFood": false,
     "nutritionalValue": 4,

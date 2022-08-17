@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "metacrystals:blocks/crystal_infuser_top",
+    "up": "metacrystals:blocks/crystal_infuser_top",
+    "north": "metacrystals:blocks/crystal_infuser_side",
+    "east": "metacrystals:blocks/crystal_infuser_side",
+    "south": "metacrystals:blocks/crystal_infuser_side",
+    "west": "metacrystals:blocks/crystal_infuser_side",
+    "particle": "metacrystals:blocks/crystal_infuser_top"
+  }
+}

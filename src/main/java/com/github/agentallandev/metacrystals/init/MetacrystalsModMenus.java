@@ -21,6 +21,7 @@ import com.github.agentallandev.metacrystals.world.inventory.Tier4WatchGUIMenu;
 import com.github.agentallandev.metacrystals.world.inventory.Tier3WatchGUIMenu;
 import com.github.agentallandev.metacrystals.world.inventory.Tier2WatchGUIMenu;
 import com.github.agentallandev.metacrystals.world.inventory.Tier1WatchGUIMenu;
+import com.github.agentallandev.metacrystals.world.inventory.CrystalInfuserMenu;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MetacrystalsModMenus {
@@ -37,6 +38,8 @@ public class MetacrystalsModMenus {
 			(id, inv, extraData) -> new Tier2WatchGUIMenu(id, inv, extraData));
 	public static final MenuType<Tier1WatchGUIMenu> TIER_1_WATCH_GUI = register("tier_1_watch_gui",
 			(id, inv, extraData) -> new Tier1WatchGUIMenu(id, inv, extraData));
+	public static final MenuType<CrystalInfuserMenu> CRYSTAL_INFUSER = register("crystal_infuser",
+			(id, inv, extraData) -> new CrystalInfuserMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

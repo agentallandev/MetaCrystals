@@ -76,6 +76,7 @@ public class MetacrystalsModVariables {
 			clone.WatchTier = original.WatchTier;
 			clone.WorkingSlot = original.WorkingSlot;
 			clone.CrystalTypeName = original.CrystalTypeName;
+			clone.AmplifyEffects = original.AmplifyEffects;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -116,6 +117,7 @@ public class MetacrystalsModVariables {
 		public double WatchTier = 6.0;
 		public double WorkingSlot = 0;
 		public String CrystalTypeName = "\"\"";
+		public boolean AmplifyEffects = false;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,6 +130,7 @@ public class MetacrystalsModVariables {
 			nbt.putDouble("WatchTier", WatchTier);
 			nbt.putDouble("WorkingSlot", WorkingSlot);
 			nbt.putString("CrystalTypeName", CrystalTypeName);
+			nbt.putBoolean("AmplifyEffects", AmplifyEffects);
 			return nbt;
 		}
 
@@ -137,6 +140,7 @@ public class MetacrystalsModVariables {
 			WatchTier = nbt.getDouble("WatchTier");
 			WorkingSlot = nbt.getDouble("WorkingSlot");
 			CrystalTypeName = nbt.getString("CrystalTypeName");
+			AmplifyEffects = nbt.getBoolean("AmplifyEffects");
 		}
 	}
 
@@ -166,6 +170,7 @@ public class MetacrystalsModVariables {
 					variables.WatchTier = message.data.WatchTier;
 					variables.WorkingSlot = message.data.WorkingSlot;
 					variables.CrystalTypeName = message.data.CrystalTypeName;
+					variables.AmplifyEffects = message.data.AmplifyEffects;
 				}
 			});
 			context.setPacketHandled(true);

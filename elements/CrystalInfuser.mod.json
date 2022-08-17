@@ -1,0 +1,137 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Crystal Infuser",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Crystal Infuser",
+          "x": 173,
+          "y": 44
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "FuseCrystal"
+          },
+          "onTakenFromSlot": {
+            "name": "FuseCrystal"
+          },
+          "onStackTransfer": {
+            "name": "FuseCrystal"
+          },
+          "name": "Slot #0",
+          "x": 150,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onSlotChanged": {
+            "name": "FuseCrystal"
+          },
+          "onTakenFromSlot": {
+            "name": "FuseCrystal"
+          },
+          "onStackTransfer": {
+            "name": "FuseCrystal"
+          },
+          "name": "Slot #1",
+          "x": 186,
+          "y": 71
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "onTakenFromSlot": {
+            "name": "FuseCrystalRemoveItems"
+          },
+          "onStackTransfer": {
+            "name": "FuseCrystalRemoveItems"
+          },
+          "name": "Slot #2",
+          "x": 258,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "crystal_infuser_idle.png",
+          "use1Xscale": false,
+          "name": "crystal_infuser_idle.png",
+          "x": 211,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "crystal_infuser_invalid.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IsInfusionInvalid"
+          },
+          "name": "crystal_infuser_invalid.png",
+          "x": 211,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "crystal_infuser_valid.png",
+          "use1Xscale": false,
+          "displayCondition": {
+            "name": "IsInfusionValid"
+          },
+          "name": "crystal_infuser_valid.png",
+          "x": 211,
+          "y": 71
+        }
+      }
+    ],
+    "onTick": {
+      "name": "IsInfusionValid"
+    },
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
