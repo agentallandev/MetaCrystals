@@ -188,7 +188,7 @@
       "name": "CrystalCycleUpOnKeyPressed",
       "type": "procedure",
       "sortid": 19,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_cycle_up_on_key_pressed",
       "metadata": {
@@ -205,7 +205,7 @@
       "name": "CrystalCycleDownOnKeyPress",
       "type": "procedure",
       "sortid": 21,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_cycle_down_on_key_press",
       "metadata": {
@@ -258,7 +258,7 @@
       "name": "CrystalTypeDisplay",
       "type": "overlay",
       "sortid": 25,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_type_display",
       "path": "~/Screens and Overlays"
@@ -267,7 +267,7 @@
       "name": "WatchInHandTick",
       "type": "procedure",
       "sortid": 26,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "registry_name": "watch_in_hand_tick",
       "metadata": {
