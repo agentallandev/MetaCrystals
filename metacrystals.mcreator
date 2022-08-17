@@ -164,7 +164,7 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "crystal_ore_loot_table",
-      "path": "~/Crystals"
+      "path": "~/Misc"
     },
     {
       "name": "MeteorTypeOne",
@@ -232,7 +232,7 @@
           }
         ]
       },
-      "path": "~/Crystals"
+      "path": "~/Procedures"
     },
     {
       "name": "CrystalCycleDownOnKeyPress",
@@ -285,7 +285,7 @@
           }
         ]
       },
-      "path": "~/Crystals"
+      "path": "~/Procedures"
     },
     {
       "name": "CrystalTypeDisplay",
