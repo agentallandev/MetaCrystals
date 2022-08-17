@@ -75,6 +75,7 @@ public class MetacrystalsModVariables {
 			clone.CrystalTypeActive = original.CrystalTypeActive;
 			clone.WatchTier = original.WatchTier;
 			clone.WorkingSlot = original.WorkingSlot;
+			clone.CrystalTypeName = original.CrystalTypeName;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -114,6 +115,7 @@ public class MetacrystalsModVariables {
 		public double CrystalTypeActive = 1.0;
 		public double WatchTier = 6.0;
 		public double WorkingSlot = 0;
+		public String CrystalTypeName = "\"\"";
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -125,6 +127,7 @@ public class MetacrystalsModVariables {
 			nbt.putDouble("CrystalTypeActive", CrystalTypeActive);
 			nbt.putDouble("WatchTier", WatchTier);
 			nbt.putDouble("WorkingSlot", WorkingSlot);
+			nbt.putString("CrystalTypeName", CrystalTypeName);
 			return nbt;
 		}
 
@@ -133,6 +136,7 @@ public class MetacrystalsModVariables {
 			CrystalTypeActive = nbt.getDouble("CrystalTypeActive");
 			WatchTier = nbt.getDouble("WatchTier");
 			WorkingSlot = nbt.getDouble("WorkingSlot");
+			CrystalTypeName = nbt.getString("CrystalTypeName");
 		}
 	}
 
@@ -161,6 +165,7 @@ public class MetacrystalsModVariables {
 					variables.CrystalTypeActive = message.data.CrystalTypeActive;
 					variables.WatchTier = message.data.WatchTier;
 					variables.WorkingSlot = message.data.WorkingSlot;
+					variables.CrystalTypeName = message.data.CrystalTypeName;
 				}
 			});
 			context.setPacketHandled(true);
