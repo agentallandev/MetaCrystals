@@ -74,7 +74,6 @@ public class MetacrystalsModVariables {
 					.orElse(new PlayerVariables()));
 			clone.CrystalTypeActive = original.CrystalTypeActive;
 			clone.WatchTier = original.WatchTier;
-			clone.CrystalTypeName = original.CrystalTypeName;
 			clone.WorkingSlot = original.WorkingSlot;
 			if (!event.isWasDeath()) {
 			}
@@ -114,7 +113,6 @@ public class MetacrystalsModVariables {
 	public static class PlayerVariables {
 		public double CrystalTypeActive = 1.0;
 		public double WatchTier = 6.0;
-		public String CrystalTypeName = "\"\"";
 		public double WorkingSlot = 0;
 
 		public void syncPlayerVariables(Entity entity) {
@@ -126,7 +124,6 @@ public class MetacrystalsModVariables {
 			CompoundTag nbt = new CompoundTag();
 			nbt.putDouble("CrystalTypeActive", CrystalTypeActive);
 			nbt.putDouble("WatchTier", WatchTier);
-			nbt.putString("CrystalTypeName", CrystalTypeName);
 			nbt.putDouble("WorkingSlot", WorkingSlot);
 			return nbt;
 		}
@@ -135,7 +132,6 @@ public class MetacrystalsModVariables {
 			CompoundTag nbt = (CompoundTag) Tag;
 			CrystalTypeActive = nbt.getDouble("CrystalTypeActive");
 			WatchTier = nbt.getDouble("WatchTier");
-			CrystalTypeName = nbt.getString("CrystalTypeName");
 			WorkingSlot = nbt.getDouble("WorkingSlot");
 		}
 	}
@@ -164,7 +160,6 @@ public class MetacrystalsModVariables {
 							.orElse(new PlayerVariables()));
 					variables.CrystalTypeActive = message.data.CrystalTypeActive;
 					variables.WatchTier = message.data.WatchTier;
-					variables.CrystalTypeName = message.data.CrystalTypeName;
 					variables.WorkingSlot = message.data.WorkingSlot;
 				}
 			});
