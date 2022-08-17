@@ -365,6 +365,23 @@
       "locked_code": false,
       "registry_name": "ability_crystal",
       "path": "~/Misc"
+    },
+    {
+      "name": "CrystalWatchEffects",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures"
     }
   ],
   "variable_elements": [
@@ -379,12 +396,6 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "6.0"
-    },
-    {
-      "name": "CrystalTypeName",
-      "type": "string",
-      "scope": "player_persistent",
-      "value": "\"\""
     },
     {
       "name": "WorkingSlot",

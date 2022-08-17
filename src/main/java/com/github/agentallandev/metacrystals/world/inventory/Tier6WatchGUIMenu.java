@@ -85,32 +85,12 @@ public class Tier6WatchGUIMenu extends AbstractContainerMenu implements Supplier
 			}
 		}));
 		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 80, 19) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(1, 0, 0);
-			}
 		}));
 		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 116, 42) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(2, 0, 0);
-			}
 		}));
 		this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 116, 78) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(3, 0, 0);
-			}
 		}));
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 100) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(4, 0, 0);
-			}
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 44, 78) {
 			@Override
