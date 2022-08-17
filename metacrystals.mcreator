@@ -22,7 +22,7 @@
       "type": "item",
       "sortid": 4,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "haste_crystal",
       "path": "~/Crystals"
     },
@@ -31,7 +31,7 @@
       "type": "item",
       "sortid": 6,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "aquatic_crystal",
       "path": "~/Crystals"
     },
@@ -57,7 +57,7 @@
       "type": "item",
       "sortid": 5,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "acrobatics_crystal",
       "path": "~/Crystals"
     },
@@ -83,7 +83,7 @@
       "type": "item",
       "sortid": 3,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "fighting_crystal",
       "path": "~/Crystals"
     },
@@ -109,7 +109,7 @@
       "type": "item",
       "sortid": 7,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "agility_crystal",
       "path": "~/Crystals"
     },
@@ -153,7 +153,7 @@
       "type": "item",
       "sortid": 8,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "power_crystal",
       "path": "~/Crystals"
     },
@@ -268,7 +268,7 @@
       "type": "item",
       "sortid": 2,
       "compiles": true,
-      "locked_code": false,
+      "locked_code": true,
       "registry_name": "magic_crystal",
       "path": "~/Crystals"
     },
@@ -409,8 +409,20 @@
         "return_type": "logic",
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -428,24 +440,22 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Crystal Infuser"
-    },
-    {
-      "name": "IsInfusionInvalid",
-      "type": "procedure",
-      "sortid": 45,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "is_infusion_invalid",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
+          },
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -459,23 +469,6 @@
       "locked_code": false,
       "registry_name": "crystal_infuser_block",
       "path": "~/Misc"
-    },
-    {
-      "name": "FuseCrystalRemoveItems",
-      "type": "procedure",
-      "sortid": 47,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "fuse_crystal_remove_items",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures/Crystal Infuser"
     },
     {
       "name": "CrystalNumOverlay",
@@ -504,12 +497,54 @@
       "path": "~/Procedures/WatchLogic"
     },
     {
-      "name": "CrystalInfuserTick",
+      "name": "CrystalItem",
+      "type": "code",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystal_item",
+      "path": "~/Crystals"
+    },
+    {
+      "name": "IsFusionReady",
       "type": "procedure",
-      "sortid": 55,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "crystal_infuser_tick",
+      "registry_name": "is_fusion_ready",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Crystal Infuser"
+    },
+    {
+      "name": "EntityTickWatchUpdater",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_tick_watch_updater",
       "metadata": {
         "dependencies": [
           {
@@ -518,12 +553,12 @@
           }
         ]
       },
-      "path": "~/Procedures/Crystal Infuser"
+      "path": "~/Procedures/Misc"
     },
     {
       "name": "Tier5WatchEffects",
       "type": "procedure",
-      "sortid": 56,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_5_watch_effects",
@@ -540,7 +575,7 @@
     {
       "name": "Tier4WatchEffects",
       "type": "procedure",
-      "sortid": 57,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_4_watch_effects",
@@ -557,7 +592,7 @@
     {
       "name": "Tier3WatchEffects",
       "type": "procedure",
-      "sortid": 58,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_3_watch_effects",
@@ -574,7 +609,7 @@
     {
       "name": "Tier2WatchEffects",
       "type": "procedure",
-      "sortid": 59,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_2_watch_effects",
@@ -591,7 +626,7 @@
     {
       "name": "Tier1WatchEffects",
       "type": "procedure",
-      "sortid": 60,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_1_watch_effects",
@@ -636,6 +671,12 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "CrystalInfuserTempTier",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [],

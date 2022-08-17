@@ -5,8 +5,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.TextComponent;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.Minecraft;
 
 import java.util.HashMap;
@@ -16,7 +18,9 @@ import com.mojang.blaze3d.systems.RenderSystem;
 
 import com.github.agentallandev.metacrystals.world.inventory.CrystalInfuserMenu;
 import com.github.agentallandev.metacrystals.procedures.IsInfusionValidProcedure;
-import com.github.agentallandev.metacrystals.procedures.IsInfusionInvalidProcedure;
+import com.github.agentallandev.metacrystals.network.MetacrystalsModVariables;
+import com.github.agentallandev.metacrystals.network.CrystalInfuserButtonMessage;
+import com.github.agentallandev.metacrystals.MetacrystalsMod;
 
 public class CrystalInfuserScreen extends AbstractContainerScreen<CrystalInfuserMenu> {
 	private final static HashMap<String, Object> guistate = CrystalInfuserMenu.guistate;
@@ -53,15 +57,11 @@ public class CrystalInfuserScreen extends AbstractContainerScreen<CrystalInfuser
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("metacrystals:textures/screens/crystal_infuser_idle.png"));
-		this.blit(ms, this.leftPos + 85, this.topPos + 34, 0, 0, 38, 18, 38, 18);
+		this.blit(ms, this.leftPos + 85, this.topPos + 30, 0, 0, 38, 18, 38, 18);
 
-		if (IsInfusionInvalidProcedure.execute(entity)) {
-			RenderSystem.setShaderTexture(0, new ResourceLocation("metacrystals:textures/screens/crystal_infuser_invalid.png"));
-			this.blit(ms, this.leftPos + 85, this.topPos + 34, 0, 0, 38, 18, 38, 18);
-		}
-		if (IsInfusionValidProcedure.execute(entity)) {
+		if (IsInfusionValidProcedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("metacrystals:textures/screens/crystal_infuser_valid.png"));
-			this.blit(ms, this.leftPos + 85, this.topPos + 34, 0, 0, 38, 18, 38, 18);
+			this.blit(ms, this.leftPos + 85, this.topPos + 30, 0, 0, 38, 18, 38, 18);
 		}
 		RenderSystem.disableBlend();
 	}
@@ -83,6 +83,7 @@ public class CrystalInfuserScreen extends AbstractContainerScreen<CrystalInfuser
 	@Override
 	protected void renderLabels(PoseStack poseStack, int mouseX, int mouseY) {
 		this.font.draw(poseStack, "Crystal Infuser", 47, 7, -12829636);
+		this.font.draw(poseStack, "" + (int) (MetacrystalsModVariables.WorldVariables.get(world).CrystalInfuserTempTier) + "", 137, 34, -12829636);
 	}
 
 	@Override
@@ -95,5 +96,11 @@ public class CrystalInfuserScreen extends AbstractContainerScreen<CrystalInfuser
 	public void init() {
 		super.init();
 		this.minecraft.keyboardHandler.setSendRepeatsToGui(true);
+		this.addRenderableWidget(new Button(this.leftPos + 36, this.topPos + 58, 103, 20, new TextComponent("Infuse Crystal"), e -> {
+			if (true) {
+				MetacrystalsMod.PACKET_HANDLER.sendToServer(new CrystalInfuserButtonMessage(0, x, y, z));
+				CrystalInfuserButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}));
 	}
 }

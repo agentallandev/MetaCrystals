@@ -25,7 +25,7 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-import com.github.agentallandev.metacrystals.procedures.IsInfusionValidProcedure;
+import com.github.agentallandev.metacrystals.procedures.IsFusionReadyProcedure;
 import com.github.agentallandev.metacrystals.network.CrystalInfuserSlotMessage;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModMenus;
 import com.github.agentallandev.metacrystals.MetacrystalsMod;
@@ -82,57 +82,21 @@ public class CrystalInfuserMenu extends AbstractContainerMenu implements Supplie
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 35) {
+		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 31) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(0, 0, 0);
 			}
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(0, 1, 0);
-			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(0, 2, b.getCount() - a.getCount());
-			}
 		}));
-		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 35) {
+		this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 61, 31) {
 			@Override
 			public void setChanged() {
 				super.setChanged();
 				slotChanged(1, 0, 0);
 			}
-
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(1, 1, 0);
-			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(1, 2, b.getCount() - a.getCount());
-			}
 		}));
-		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 35) {
-			@Override
-			public void onTake(Player entity, ItemStack stack) {
-				super.onTake(entity, stack);
-				slotChanged(2, 1, 0);
-			}
-
-			@Override
-			public void onQuickCraft(ItemStack a, ItemStack b) {
-				super.onQuickCraft(a, b);
-				slotChanged(2, 2, b.getCount() - a.getCount());
-			}
-
+		this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 133, 31) {
 			@Override
 			public boolean mayPlace(ItemStack stack) {
 				return false;
@@ -311,7 +275,7 @@ public class CrystalInfuserMenu extends AbstractContainerMenu implements Supplie
 			double y = entity.getY();
 			double z = entity.getZ();
 
-			IsInfusionValidProcedure.execute(entity);
+			IsFusionReadyProcedure.execute(world, x, y, z, entity);
 		}
 	}
 }

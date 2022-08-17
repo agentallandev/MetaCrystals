@@ -33,17 +33,11 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
           "onSlotChanged": {
-            "name": "FuseCrystal"
-          },
-          "onTakenFromSlot": {
-            "name": "FuseCrystal"
-          },
-          "onStackTransfer": {
-            "name": "FuseCrystal"
+            "name": "IsFusionReady"
           },
           "name": "Slot #0",
           "x": 150,
-          "y": 71
+          "y": 67
         }
       },
       {
@@ -56,17 +50,11 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
           "onSlotChanged": {
-            "name": "FuseCrystal"
-          },
-          "onTakenFromSlot": {
-            "name": "FuseCrystal"
-          },
-          "onStackTransfer": {
-            "name": "FuseCrystal"
+            "name": "IsFusionReady"
           },
           "name": "Slot #1",
           "x": 186,
-          "y": 71
+          "y": 67
         }
       },
       {
@@ -75,15 +63,9 @@
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onTakenFromSlot": {
-            "name": "FuseCrystalRemoveItems"
-          },
-          "onStackTransfer": {
-            "name": "FuseCrystalRemoveItems"
-          },
           "name": "Slot #2",
           "x": 258,
-          "y": 71
+          "y": 67
         }
       },
       {
@@ -93,20 +75,7 @@
           "use1Xscale": false,
           "name": "crystal_infuser_idle.png",
           "x": 211,
-          "y": 71
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "crystal_infuser_invalid.png",
-          "use1Xscale": false,
-          "displayCondition": {
-            "name": "IsInfusionInvalid"
-          },
-          "name": "crystal_infuser_invalid.png",
-          "x": 211,
-          "y": 71
+          "y": 67
         }
       },
       {
@@ -119,19 +88,46 @@
           },
           "name": "crystal_infuser_valid.png",
           "x": 211,
+          "y": 67
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Infuse Crystal",
+          "onClick": {
+            "name": "FuseCrystal"
+          },
+          "width": 103,
+          "height": 20,
+          "name": "Infuse Crystal",
+          "x": 162,
+          "y": 95
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<VAR:integer:CrystalInfuserTempTier>",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<VAR:integer:CrystalInfuserTempTier>",
+          "x": 263,
           "y": 71
         }
       }
     ],
     "onTick": {
-      "name": "IsInfusionValid"
+      "name": "IsFusionReady"
     },
     "gridSettings": {
       "sx": 9,
       "sy": 9,
       "ox": 11,
       "oy": 15,
-      "snapOnGrid": false
+      "snapOnGrid": true
     }
   }
 }

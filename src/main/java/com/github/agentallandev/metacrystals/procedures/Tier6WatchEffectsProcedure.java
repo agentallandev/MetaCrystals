@@ -5,8 +5,6 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
 
 import java.util.concurrent.atomic.AtomicReference;
 
@@ -24,8 +22,8 @@ public class Tier6WatchEffectsProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
-		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("metacrystals:crystal_watch")))) {
+		if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getItem() == MetacrystalsModItems.TIER_6_WATCH
+				.get()) {
 			if (MetacrystalsModItems.HASTE_CRYSTAL.get() == (new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -118,7 +116,7 @@ public class Tier6WatchEffectsProcedure {
 				}
 			}
 		} else if ((entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("metacrystals:crystal_watch")))) {
+				.getItem() == MetacrystalsModItems.TIER_6_WATCH.get()) {
 			if (MetacrystalsModItems.HASTE_CRYSTAL.get() == (new Object() {
 				public ItemStack getItemStack(int sltid, ItemStack _isc) {
 					AtomicReference<ItemStack> _retval = new AtomicReference<>(ItemStack.EMPTY);
@@ -209,6 +207,14 @@ public class Tier6WatchEffectsProcedure {
 						capability.syncPlayerVariables(entity);
 					});
 				}
+			}
+		} else {
+			{
+				double _setval = 1;
+				entity.getCapability(MetacrystalsModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+					capability.CrystalTypeActive = _setval;
+					capability.syncPlayerVariables(entity);
+				});
 			}
 		}
 	}

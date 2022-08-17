@@ -9,10 +9,11 @@ import net.minecraft.world.entity.Entity;
 
 import com.github.agentallandev.metacrystals.procedures.HasteCrystalItemInHandTickProcedure;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
+import com.github.agentallandev.metacrystals.CrystalItem;
 
-public class HasteCrystalItem extends Item {
+public class HasteCrystalItem extends CrystalItem {
 	public HasteCrystalItem() {
-		super(new Item.Properties().tab(MetacrystalsModTabs.TAB_CRYSTAL_CREATIVE_TAB).stacksTo(64).rarity(Rarity.COMMON));
+		super();
 	}
 
 	@Override

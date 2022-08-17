@@ -15,8 +15,7 @@ import java.util.function.Supplier;
 import java.util.HashMap;
 
 import com.github.agentallandev.metacrystals.world.inventory.CrystalInfuserMenu;
-import com.github.agentallandev.metacrystals.procedures.FuseCrystalRemoveItemsProcedure;
-import com.github.agentallandev.metacrystals.procedures.FuseCrystalProcedure;
+import com.github.agentallandev.metacrystals.procedures.IsFusionReadyProcedure;
 import com.github.agentallandev.metacrystals.MetacrystalsMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -73,38 +72,11 @@ public class CrystalInfuserSlotMessage {
 			return;
 		if (slotID == 0 && changeType == 0) {
 
-			FuseCrystalProcedure.execute(entity);
-		}
-		if (slotID == 0 && changeType == 1) {
-
-			FuseCrystalProcedure.execute(entity);
-		}
-		if (slotID == 0 && changeType == 2) {
-			int amount = meta;
-
-			FuseCrystalProcedure.execute(entity);
+			IsFusionReadyProcedure.execute(world, x, y, z, entity);
 		}
 		if (slotID == 1 && changeType == 0) {
 
-			FuseCrystalProcedure.execute(entity);
-		}
-		if (slotID == 1 && changeType == 1) {
-
-			FuseCrystalProcedure.execute(entity);
-		}
-		if (slotID == 1 && changeType == 2) {
-			int amount = meta;
-
-			FuseCrystalProcedure.execute(entity);
-		}
-		if (slotID == 2 && changeType == 1) {
-
-			FuseCrystalRemoveItemsProcedure.execute(entity);
-		}
-		if (slotID == 2 && changeType == 2) {
-			int amount = meta;
-
-			FuseCrystalRemoveItemsProcedure.execute(entity);
+			IsFusionReadyProcedure.execute(world, x, y, z, entity);
 		}
 	}
 
