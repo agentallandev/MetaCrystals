@@ -29,6 +29,9 @@
     "guiBoundTo": "Tier6WatchGUI",
     "inventorySize": 7,
     "inventoryStackSize": 1,
+    "onItemInUseTick": {
+      "name": "CrystalWatchEffects"
+    },
     "isFood": false,
     "nutritionalValue": 4,
     "saturation": 0.3,

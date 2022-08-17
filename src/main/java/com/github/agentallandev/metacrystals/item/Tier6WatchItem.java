@@ -13,6 +13,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
@@ -27,6 +28,7 @@ import javax.annotation.Nullable;
 import io.netty.buffer.Unpooled;
 
 import com.github.agentallandev.metacrystals.world.inventory.Tier6WatchGUIMenu;
+import com.github.agentallandev.metacrystals.procedures.CrystalWatchEffectsProcedure;
 import com.github.agentallandev.metacrystals.item.inventory.Tier6WatchInventoryCapability;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
 
@@ -62,6 +64,13 @@ public class Tier6WatchItem extends Item {
 			});
 		}
 		return ar;
+	}
+
+	@Override
+	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
+		super.inventoryTick(itemstack, world, entity, slot, selected);
+		if (selected)
+			CrystalWatchEffectsProcedure.execute(entity);
 	}
 
 	@Override

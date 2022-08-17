@@ -46,9 +46,6 @@
           "id": 1,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IsValidCrystalItem"
-          },
           "name": "Slot #1",
           "x": 205,
           "y": 35
@@ -63,9 +60,6 @@
           "id": 2,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IsValidCrystalItem"
-          },
           "name": "Slot #2",
           "x": 241,
           "y": 58
@@ -80,9 +74,6 @@
           "id": 3,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IsValidCrystalItem"
-          },
           "name": "Slot #3",
           "x": 241,
           "y": 94
@@ -97,9 +88,6 @@
           "id": 4,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IsValidCrystalItem"
-          },
           "name": "Slot #4",
           "x": 205,
           "y": 116

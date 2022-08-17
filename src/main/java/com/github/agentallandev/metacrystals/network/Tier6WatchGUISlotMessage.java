@@ -70,22 +70,6 @@ public class Tier6WatchGUISlotMessage {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
-		if (slotID == 1 && changeType == 0) {
-
-			IsValidCrystalItemProcedure.execute(entity);
-		}
-		if (slotID == 2 && changeType == 0) {
-
-			IsValidCrystalItemProcedure.execute(entity);
-		}
-		if (slotID == 3 && changeType == 0) {
-
-			IsValidCrystalItemProcedure.execute(entity);
-		}
-		if (slotID == 4 && changeType == 0) {
-
-			IsValidCrystalItemProcedure.execute(entity);
-		}
 		if (slotID == 5 && changeType == 0) {
 
 			IsValidCrystalItemProcedure.execute(entity);
