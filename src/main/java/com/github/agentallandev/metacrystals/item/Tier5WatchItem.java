@@ -27,13 +27,13 @@ import javax.annotation.Nullable;
 
 import io.netty.buffer.Unpooled;
 
-import com.github.agentallandev.metacrystals.world.inventory.Tier6WatchGUIMenu;
+import com.github.agentallandev.metacrystals.world.inventory.Tier5WatchGUIMenu;
 import com.github.agentallandev.metacrystals.procedures.CrystalWatchEffectsProcedure;
-import com.github.agentallandev.metacrystals.item.inventory.Tier6WatchInventoryCapability;
+import com.github.agentallandev.metacrystals.item.inventory.Tier5WatchInventoryCapability;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
 
-public class Tier6WatchItem extends Item {
-	public Tier6WatchItem() {
+public class Tier5WatchItem extends Item {
+	public Tier5WatchItem() {
 		super(new Item.Properties().tab(MetacrystalsModTabs.TAB_CRYSTAL_CREATIVE_TAB).stacksTo(1).rarity(Rarity.COMMON));
 	}
 
@@ -48,7 +48,7 @@ public class Tier6WatchItem extends Item {
 			NetworkHooks.openGui(serverPlayer, new MenuProvider() {
 				@Override
 				public Component getDisplayName() {
-					return new TextComponent("Tier 6 Crystal Watch");
+					return new TextComponent("Tier 5 Crystal Watch");
 				}
 
 				@Override
@@ -56,7 +56,7 @@ public class Tier6WatchItem extends Item {
 					FriendlyByteBuf packetBuffer = new FriendlyByteBuf(Unpooled.buffer());
 					packetBuffer.writeBlockPos(entity.blockPosition());
 					packetBuffer.writeByte(hand == InteractionHand.MAIN_HAND ? 0 : 1);
-					return new Tier6WatchGUIMenu(id, inventory, packetBuffer);
+					return new Tier5WatchGUIMenu(id, inventory, packetBuffer);
 				}
 			}, buf -> {
 				buf.writeBlockPos(entity.blockPosition());
@@ -75,7 +75,7 @@ public class Tier6WatchItem extends Item {
 
 	@Override
 	public ICapabilityProvider initCapabilities(ItemStack stack, @Nullable CompoundTag compound) {
-		return new Tier6WatchInventoryCapability();
+		return new Tier5WatchInventoryCapability();
 	}
 
 	@Override

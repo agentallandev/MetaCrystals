@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "crystal_watch_tier_6",
+    "texture": "crystal_watch_tier_3",
     "customModelName": "Normal",
-    "name": "Tier 6 Crystal Watch",
+    "name": "Tier 3 Crystal Watch",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:CrystalCreativeTab"
@@ -26,8 +26,8 @@
     "damageVsEntity": 0.0,
     "specialInfo": [],
     "hasGlow": false,
-    "guiBoundTo": "Tier6WatchGUI",
-    "inventorySize": 7,
+    "guiBoundTo": "Tier3WatchGUI",
+    "inventorySize": 4,
     "inventoryStackSize": 1,
     "onItemInUseTick": {
       "name": "CrystalWatchEffects"
