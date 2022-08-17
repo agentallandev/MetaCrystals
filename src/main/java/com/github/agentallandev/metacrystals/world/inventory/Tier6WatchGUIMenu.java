@@ -22,10 +22,8 @@ import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
-import com.github.agentallandev.metacrystals.network.Tier6WatchGUISlotMessage;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModMenus;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModItems;
-import com.github.agentallandev.metacrystals.MetacrystalsMod;
 
 public class Tier6WatchGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
 	public final static HashMap<String, Object> guistate = new HashMap<>();
@@ -93,11 +91,6 @@ public class Tier6WatchGUIMenu extends AbstractContainerMenu implements Supplier
 		this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 80, 100) {
 		}));
 		this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 44, 78) {
-			@Override
-			public void setChanged() {
-				super.setChanged();
-				slotChanged(5, 0, 0);
-			}
 		}));
 		this.customSlots.put(6, this.addSlot(new SlotItemHandler(internal, 6, 44, 42) {
 			@Override
@@ -271,13 +264,6 @@ public class Tier6WatchGUIMenu extends AbstractContainerMenu implements Supplier
 					playerIn.getInventory().placeItemBackInInventory(internal.extractItem(i, internal.getStackInSlot(i).getCount(), false));
 				}
 			}
-		}
-	}
-
-	private void slotChanged(int slotid, int ctype, int meta) {
-		if (this.world != null && this.world.isClientSide()) {
-			MetacrystalsMod.PACKET_HANDLER.sendToServer(new Tier6WatchGUISlotMessage(slotid, x, y, z, ctype, meta));
-			Tier6WatchGUISlotMessage.handleSlotAction(entity, slotid, ctype, meta, x, y, z);
 		}
 	}
 

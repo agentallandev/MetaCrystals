@@ -1,6 +1,11 @@
 {
   "replace": false,
   "values": [
-    "metacrystals:tier_6_watch"
+    "metacrystals:tier_4_watch",
+    "metacrystals:tier_1_watch",
+    "metacrystals:tier_6_watch",
+    "metacrystals:tier_3_watch",
+    "metacrystals:tier_2_watch",
+    "metacrystals:tier_5_watch"
   ]
 }

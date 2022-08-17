@@ -11,6 +11,8 @@ public class CrystalTypeDisplayDisplayOverlayIngameProcedure {
 		if (entity == null)
 			return false;
 		return (entity instanceof LivingEntity _livEnt ? _livEnt.getOffhandItem() : ItemStack.EMPTY)
-				.is(ItemTags.create(new ResourceLocation("metacrystals:crystal_watch")));
+				.is(ItemTags.create(new ResourceLocation("metacrystals:crystal_watch")))
+				|| (entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY)
+						.is(ItemTags.create(new ResourceLocation("metacrystals:crystal_watch")));
 	}
 }

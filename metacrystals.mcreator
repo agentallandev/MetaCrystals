@@ -202,39 +202,6 @@
       "path": "~/Procedures"
     },
     {
-      "name": "CrystalWatchRightclicked",
-      "type": "procedure",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal_watch_rightclicked",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
       "name": "CrystalCycleDownOnKeyPress",
       "type": "procedure",
       "sortid": 21,
@@ -308,23 +275,10 @@
           {
             "name": "entity",
             "type": "entity"
-          }
-        ]
-      },
-      "path": "~/Procedures"
-    },
-    {
-      "name": "IsValidCrystalItem",
-      "type": "procedure",
-      "sortid": 27,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "is_valid_crystal_item",
-      "metadata": {
-        "dependencies": [
+          },
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },
@@ -378,6 +332,10 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
           }
         ]
       },

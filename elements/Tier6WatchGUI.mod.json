@@ -102,9 +102,6 @@
           "id": 5,
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": false,
-          "onSlotChanged": {
-            "name": "IsValidCrystalItem"
-          },
           "name": "Slot #5",
           "x": 169,
           "y": 94

@@ -30,7 +30,7 @@
     "inventorySize": 5,
     "inventoryStackSize": 1,
     "onItemInUseTick": {
-      "name": "CrystalWatchEffects"
+      "name": "WatchInHandTick"
     },
     "isFood": false,
     "nutritionalValue": 4,

@@ -6,6 +6,21 @@
     "items": [
       {
         "value": "CUSTOM:Tier6Watch"
+      },
+      {
+        "value": "CUSTOM:Tier5Watch"
+      },
+      {
+        "value": "CUSTOM:Tier4Watch"
+      },
+      {
+        "value": "CUSTOM:Tier3Watch"
+      },
+      {
+        "value": "CUSTOM:Tier2Watch"
+      },
+      {
+        "value": "CUSTOM:Tier1Watch"
       }
     ],
     "blocks": [],
