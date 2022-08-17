@@ -33,6 +33,6 @@
         "value": "mutated_plains"
       }
     ],
-    "ignoreBlocks": "AIR"
+    "ignoreBlocks": "STRUCTURE_BLOCK"
   }
 }

@@ -17,6 +17,7 @@ import com.github.agentallandev.metacrystals.client.gui.Tier4WatchGUIScreen;
 import com.github.agentallandev.metacrystals.client.gui.Tier3WatchGUIScreen;
 import com.github.agentallandev.metacrystals.client.gui.Tier2WatchGUIScreen;
 import com.github.agentallandev.metacrystals.client.gui.Tier1WatchGUIScreen;
+import com.github.agentallandev.metacrystals.client.gui.CrystalInfuserScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class MetacrystalsModScreens {
@@ -29,6 +30,7 @@ public class MetacrystalsModScreens {
 			MenuScreens.register(MetacrystalsModMenus.TIER_3_WATCH_GUI, Tier3WatchGUIScreen::new);
 			MenuScreens.register(MetacrystalsModMenus.TIER_2_WATCH_GUI, Tier2WatchGUIScreen::new);
 			MenuScreens.register(MetacrystalsModMenus.TIER_1_WATCH_GUI, Tier1WatchGUIScreen::new);
+			MenuScreens.register(MetacrystalsModMenus.CRYSTAL_INFUSER, CrystalInfuserScreen::new);
 		});
 	}
 }

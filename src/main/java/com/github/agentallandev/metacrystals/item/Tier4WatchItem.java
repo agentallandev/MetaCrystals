@@ -28,7 +28,7 @@ import javax.annotation.Nullable;
 import io.netty.buffer.Unpooled;
 
 import com.github.agentallandev.metacrystals.world.inventory.Tier4WatchGUIMenu;
-import com.github.agentallandev.metacrystals.procedures.WatchInHandTickProcedure;
+import com.github.agentallandev.metacrystals.procedures.Tier4WatchEffectsProcedure;
 import com.github.agentallandev.metacrystals.item.inventory.Tier4WatchInventoryCapability;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
 
@@ -69,8 +69,7 @@ public class Tier4WatchItem extends Item {
 	@Override
 	public void inventoryTick(ItemStack itemstack, Level world, Entity entity, int slot, boolean selected) {
 		super.inventoryTick(itemstack, world, entity, slot, selected);
-		if (selected)
-			WatchInHandTickProcedure.execute(entity, itemstack);
+		Tier4WatchEffectsProcedure.execute(entity);
 	}
 
 	@Override

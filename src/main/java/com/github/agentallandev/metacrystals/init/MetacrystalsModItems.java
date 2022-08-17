@@ -45,6 +45,8 @@ public class MetacrystalsModItems {
 	public static final RegistryObject<Item> TIER_3_WATCH = REGISTRY.register("tier_3_watch", () -> new Tier3WatchItem());
 	public static final RegistryObject<Item> TIER_2_WATCH = REGISTRY.register("tier_2_watch", () -> new Tier2WatchItem());
 	public static final RegistryObject<Item> TIER_1_WATCH = REGISTRY.register("tier_1_watch", () -> new Tier1WatchItem());
+	public static final RegistryObject<Item> CRYSTAL_INFUSER_BLOCK = block(MetacrystalsModBlocks.CRYSTAL_INFUSER_BLOCK,
+			MetacrystalsModTabs.TAB_CRYSTAL_CREATIVE_TAB);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

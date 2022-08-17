@@ -29,8 +29,8 @@
     "guiBoundTo": "Tier6WatchGUI",
     "inventorySize": 7,
     "inventoryStackSize": 1,
-    "onItemInUseTick": {
-      "name": "WatchInHandTick"
+    "onItemInInventoryTick": {
+      "name": "Tier6WatchEffects"
     },
     "isFood": false,
     "nutritionalValue": 4,

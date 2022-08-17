@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "metacrystals:block/crystal_infuser_block"
+    }
+  }
+}

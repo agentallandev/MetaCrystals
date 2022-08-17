@@ -188,7 +188,7 @@
       "name": "CrystalCycleUpOnKeyPressed",
       "type": "procedure",
       "sortid": 19,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "crystal_cycle_up_on_key_pressed",
       "metadata": {
@@ -205,7 +205,7 @@
       "name": "CrystalCycleDownOnKeyPress",
       "type": "procedure",
       "sortid": 21,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "crystal_cycle_down_on_key_press",
       "metadata": {
@@ -258,31 +258,10 @@
       "name": "CrystalTypeDisplay",
       "type": "overlay",
       "sortid": 25,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "crystal_type_display",
       "path": "~/Screens and Overlays"
-    },
-    {
-      "name": "WatchInHandTick",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "watch_in_hand_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Procedures"
     },
     {
       "name": "MagicCrystal",
@@ -319,27 +298,6 @@
       "locked_code": false,
       "registry_name": "ability_crystal",
       "path": "~/Misc"
-    },
-    {
-      "name": "CrystalWatchEffects",
-      "type": "procedure",
-      "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "crystal_watch_effects",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/Procedures"
     },
     {
       "name": "Tier5WatchGUI",
@@ -430,6 +388,257 @@
       "locked_code": false,
       "registry_name": "tier_1_watch",
       "path": "~/Watches"
+    },
+    {
+      "name": "Tier1WatchEffects",
+      "type": "procedure",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_1_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "FuseCrystal",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fuse_crystal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Crystal Infuser"
+    },
+    {
+      "name": "Tier2WatchEffects",
+      "type": "procedure",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_2_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "Tier5WatchEffects",
+      "type": "procedure",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_5_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "IsInfusionValid",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_infusion_valid",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Crystal Infuser"
+    },
+    {
+      "name": "CrystalInfuser",
+      "type": "gui",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_infuser",
+      "path": "~/Screens and Overlays"
+    },
+    {
+      "name": "Tier3WatchEffects",
+      "type": "procedure",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_3_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "IsFusionReady",
+      "type": "procedure",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "is_fusion_ready",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/Crystal Infuser"
+    },
+    {
+      "name": "Tier4WatchEffects",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_4_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "CrystalItem",
+      "type": "code",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "crystal_item",
+      "path": "~/Crystals"
+    },
+    {
+      "name": "Tier6WatchEffects",
+      "type": "procedure",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tier_6_watch_effects",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "EntityTickWatchUpdater",
+      "type": "procedure",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "entity_tick_watch_updater",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Procedures/Misc"
+    },
+    {
+      "name": "CrystalInfuserBlock",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_infuser_block",
+      "path": "~/Misc"
+    },
+    {
+      "name": "CrystalNumOverlay",
+      "type": "overlay",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "crystal_num_overlay",
+      "path": "~/Screens and Overlays"
     }
   ],
   "variable_elements": [
@@ -456,6 +665,18 @@
       "type": "string",
       "scope": "player_persistent",
       "value": "\"\""
+    },
+    {
+      "name": "AmplifyEffects",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
+    },
+    {
+      "name": "CrystalInfuserTempTier",
+      "type": "number",
+      "scope": "world",
+      "value": "0"
     }
   ],
   "sound_elements": [],
@@ -477,6 +698,7 @@
       "item.metacrystals.magic_crystal": "Magic Crystal",
       "item.metacrystals.tier_2_watch": "Tier 2 Crystal Watch",
       "item.metacrystals.agility_crystal": "Agility Crystal",
+      "block.metacrystals.crystal_infuser_block": "Crystal Infuser",
       "item.metacrystals.tier_3_watch": "Tier 3 Crystal Watch"
     }
   },
@@ -484,19 +706,41 @@
     "name": "~",
     "children": [
       {
-        "name": "Watches",
-        "children": []
+        "name": "Screens and Overlays",
+        "children": [
+          {
+            "name": "Watch GUIs",
+            "children": []
+          }
+        ]
       },
       {
-        "name": "Screens and Overlays",
+        "name": "Misc",
         "children": []
       },
       {
         "name": "Procedures",
-        "children": []
+        "children": [
+          {
+            "name": "Misc",
+            "children": []
+          },
+          {
+            "name": "CrystalEffects",
+            "children": []
+          },
+          {
+            "name": "WatchLogic",
+            "children": []
+          },
+          {
+            "name": "Crystal Infuser",
+            "children": []
+          }
+        ]
       },
       {
-        "name": "Misc",
+        "name": "Watches",
         "children": []
       },
       {

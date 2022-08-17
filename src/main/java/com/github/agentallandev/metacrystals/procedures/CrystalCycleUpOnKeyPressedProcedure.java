@@ -1,17 +1,8 @@
 package com.github.agentallandev.metacrystals.procedures;
 
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.tags.ItemTags;
-import net.minecraft.resources.ResourceLocation;
-
-import java.util.concurrent.atomic.AtomicReference;
-
-import com.github.agentallandev.metacrystals.network.MetacrystalsModVariables;
+import javax.annotation.Nullable;
 
 public class CrystalCycleUpOnKeyPressedProcedure {
 	public static void execute(Entity entity) {
