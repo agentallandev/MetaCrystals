@@ -57,11 +57,11 @@ public class CrystalInfuserScreen extends AbstractContainerScreen<CrystalInfuser
 		this.blit(ms, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		RenderSystem.setShaderTexture(0, new ResourceLocation("metacrystals:textures/screens/crystal_infuser_idle.png"));
-		this.blit(ms, this.leftPos + 85, this.topPos + 30, 0, 0, 38, 18, 38, 18);
+		this.blit(ms, this.leftPos + 85, this.topPos + 30, 0, 0, 36, 18, 36, 18);
 
 		if (IsInfusionValidProcedure.execute(world, x, y, z)) {
 			RenderSystem.setShaderTexture(0, new ResourceLocation("metacrystals:textures/screens/crystal_infuser_valid.png"));
-			this.blit(ms, this.leftPos + 85, this.topPos + 30, 0, 0, 38, 18, 38, 18);
+			this.blit(ms, this.leftPos + 85, this.topPos + 30, 0, 0, 36, 18, 36, 18);
 		}
 		RenderSystem.disableBlend();
 	}
