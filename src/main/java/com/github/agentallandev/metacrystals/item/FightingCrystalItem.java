@@ -9,11 +9,10 @@ import net.minecraft.world.entity.Entity;
 
 import com.github.agentallandev.metacrystals.procedures.FightingCrystalItemInHandTickProcedure;
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
-import com.github.agentallandev.metacrystals.CrystalItem;
 
-public class FightingCrystalItem extends CrystalItem {
+public class FightingCrystalItem extends Item {
 	public FightingCrystalItem() {
-		super();
+		super(new Item.Properties().tab(MetacrystalsModTabs.TAB_CRYSTAL_CREATIVE_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

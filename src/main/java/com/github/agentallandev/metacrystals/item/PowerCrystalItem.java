@@ -5,10 +5,9 @@ import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.Item;
 
 import com.github.agentallandev.metacrystals.init.MetacrystalsModTabs;
-import com.github.agentallandev.metacrystals.CrystalItem;
 
-public class PowerCrystalItem extends CrystalItem {
+public class PowerCrystalItem extends Item {
 	public PowerCrystalItem() {
-		super();
+		super(new Item.Properties().tab(MetacrystalsModTabs.TAB_CRYSTAL_CREATIVE_TAB).stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

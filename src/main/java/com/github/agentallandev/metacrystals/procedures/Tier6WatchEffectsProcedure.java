@@ -1,15 +1,8 @@
 package com.github.agentallandev.metacrystals.procedures;
 
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Entity;
-
-import java.util.concurrent.atomic.AtomicReference;
-
-import com.github.agentallandev.metacrystals.network.MetacrystalsModVariables;
-import com.github.agentallandev.metacrystals.init.MetacrystalsModItems;
+import javax.annotation.Nullable;
 
 public class Tier6WatchEffectsProcedure {
 	public static void execute(Entity entity) {

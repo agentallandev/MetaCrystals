@@ -188,7 +188,7 @@
       "name": "CrystalCycleUpOnKeyPressed",
       "type": "procedure",
       "sortid": 19,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "crystal_cycle_up_on_key_pressed",
       "metadata": {
@@ -402,7 +402,7 @@
       "name": "IsInfusionValid",
       "type": "procedure",
       "sortid": 42,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "registry_name": "is_infusion_valid",
       "metadata": {
@@ -1054,6 +1054,24 @@
       "locked_code": false,
       "registry_name": "watch_band_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "InfuserRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infuser_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WAU",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wau",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [
@@ -1142,10 +1160,6 @@
     "name": "~",
     "children": [
       {
-        "name": "Watches",
-        "children": []
-      },
-      {
         "name": "Screens and Overlays",
         "children": [
           {
@@ -1155,14 +1169,22 @@
         ]
       },
       {
+        "name": "Misc",
+        "children": []
+      },
+      {
         "name": "Procedures",
         "children": [
           {
-            "name": "CrystalEffects",
+            "name": "WAU",
             "children": []
           },
           {
             "name": "Misc",
+            "children": []
+          },
+          {
+            "name": "CrystalEffects",
             "children": []
           },
           {
@@ -1172,19 +1194,15 @@
           {
             "name": "Crystal Infuser",
             "children": []
-          },
-          {
-            "name": "WAU",
-            "children": []
           }
         ]
       },
       {
-        "name": "Misc",
+        "name": "Recipes",
         "children": []
       },
       {
-        "name": "Crystals",
+        "name": "Watches",
         "children": []
       },
       {
@@ -1192,7 +1210,7 @@
         "children": []
       },
       {
-        "name": "Recipes",
+        "name": "Crystals",
         "children": []
       }
     ]

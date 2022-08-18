@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "metacrystals:magic_crystal"
+    },
+    "1": {
+      "item": "metacrystals:power_crystal"
+    },
+    "2": {
+      "item": "metacrystals:magic_crystal"
+    },
+    "3": {
+      "item": "metacrystals:power_crystal"
+    },
+    "4": {
+      "item": "metacrystals:dwarf_star_alloy_block"
+    },
+    "5": {
+      "item": "metacrystals:power_crystal"
+    },
+    "6": {
+      "item": "metacrystals:magic_crystal"
+    },
+    "7": {
+      "item": "metacrystals:power_crystal"
+    },
+    "8": {
+      "item": "metacrystals:magic_crystal"
+    }
+  },
+  "result": {
+    "item": "metacrystals:crystal_infuser_block",
+    "count": 1
+  }
+}
