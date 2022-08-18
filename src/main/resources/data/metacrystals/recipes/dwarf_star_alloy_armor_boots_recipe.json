@@ -6,20 +6,20 @@
   ],
   "key": {
     "0": {
-      "item": "metacrystals:deleted_mod_element"
+      "item": "metacrystals:dwarf_star_alloy_ingot"
     },
     "2": {
-      "item": "metacrystals:deleted_mod_element"
+      "item": "metacrystals:dwarf_star_alloy_ingot"
     },
     "3": {
-      "item": "metacrystals:deleted_mod_element"
+      "item": "metacrystals:dwarf_star_alloy_ingot"
     },
     "5": {
-      "item": "metacrystals:deleted_mod_element"
+      "item": "metacrystals:dwarf_star_alloy_ingot"
     }
   },
   "result": {
-    "item": "metacrystals:deleted_mod_element_boots",
+    "item": "metacrystals:dwarf_star_alloy_armor_boots",
     "count": 1
   }
 }
