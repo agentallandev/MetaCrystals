@@ -1,10 +1,22 @@
 
 package com.github.agentallandev.metacrystals.item;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
+
+import com.github.agentallandev.metacrystals.init.MetacrystalsModItems;
 
 public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
-
 	public DwarfStarAlloyArmorItem(EquipmentSlot slot, Item.Properties properties) {
 		super(new ArmorMaterial() {
 			@Override
@@ -29,7 +41,7 @@ public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
 
 			@Override
 			public Ingredient getRepairIngredient() {
-				return Ingredient.of(new ItemStack(MetacrystalsModItems.DELETED_MOD_ELEMENT.get()));
+				return Ingredient.of(new ItemStack(MetacrystalsModItems.DWARF_STAR_ALLOY_INGOT.get()));
 			}
 
 			@Override
@@ -50,7 +62,6 @@ public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
 	}
 
 	public static class Helmet extends DwarfStarAlloyArmorItem {
-
 		public Helmet() {
 			super(EquipmentSlot.HEAD, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 		}
@@ -59,11 +70,9 @@ public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "metacrystals:textures/models/armor/dwarfstaralloy_layer_1.png";
 		}
-
 	}
 
 	public static class Chestplate extends DwarfStarAlloyArmorItem {
-
 		public Chestplate() {
 			super(EquipmentSlot.CHEST, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 		}
@@ -72,11 +81,9 @@ public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "metacrystals:textures/models/armor/dwarfstaralloy_layer_1.png";
 		}
-
 	}
 
 	public static class Leggings extends DwarfStarAlloyArmorItem {
-
 		public Leggings() {
 			super(EquipmentSlot.LEGS, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 		}
@@ -85,11 +92,9 @@ public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "metacrystals:textures/models/armor/dwarfstaralloy_layer_2.png";
 		}
-
 	}
 
 	public static class Boots extends DwarfStarAlloyArmorItem {
-
 		public Boots() {
 			super(EquipmentSlot.FEET, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT));
 		}
@@ -98,7 +103,5 @@ public abstract class DwarfStarAlloyArmorItem extends ArmorItem {
 		public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlot slot, String type) {
 			return "metacrystals:textures/models/armor/dwarfstaralloy_layer_1.png";
 		}
-
 	}
-
 }

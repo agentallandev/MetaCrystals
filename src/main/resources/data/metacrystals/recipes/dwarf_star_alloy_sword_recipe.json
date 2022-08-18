@@ -7,17 +7,17 @@
   ],
   "key": {
     "0": {
-      "item": "metacrystals:deleted_mod_element"
+      "item": "metacrystals:dwarf_star_alloy_ingot"
     },
     "1": {
-      "item": "metacrystals:deleted_mod_element"
+      "item": "metacrystals:dwarf_star_alloy_ingot"
     },
     "2": {
       "item": "minecraft:stick"
     }
   },
   "result": {
-    "item": "metacrystals:deleted_mod_element",
+    "item": "metacrystals:dwarf_star_alloy_sword",
     "count": 1
   }
 }
