@@ -7,35 +7,35 @@
   ],
   "key": {
     "0": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "1": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "2": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "3": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "4": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "5": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "6": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "7": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     },
     "8": {
-      "item": "metacrystals:dwarf_star_alloy_ingot"
+      "item": "metacrystals:deleted_mod_element"
     }
   },
   "result": {
-    "item": "metacrystals:dwarf_star_alloy_block",
+    "item": "metacrystals:deleted_mod_element",
     "count": 1
   }
 }

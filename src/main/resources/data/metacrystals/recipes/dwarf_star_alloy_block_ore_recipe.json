@@ -2,11 +2,11 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "metacrystals:dwarf_star_alloy_block"
+      "item": "metacrystals:deleted_mod_element"
     }
   ],
   "result": {
-    "item": "metacrystals:dwarf_star_alloy_ingot",
+    "item": "metacrystals:deleted_mod_element",
     "count": 9
   }
 }
