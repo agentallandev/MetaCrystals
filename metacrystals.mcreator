@@ -556,9 +556,314 @@
       "path": "~/Procedures/Misc"
     },
     {
+      "name": "WatchAssemblyUnitGUI",
+      "type": "gui",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_assembly_unit_gui",
+      "path": "~/Procedures/WAU"
+    },
+    {
+      "name": "Assemble",
+      "type": "procedure",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "assemble",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/WAU"
+    },
+    {
+      "name": "WatchBand",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_band",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchBuckle",
+      "type": "item",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_buckle",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchCore1",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_1",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchCore2",
+      "type": "item",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_2",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchCore3",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_3",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchCore4",
+      "type": "item",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_4",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchCore5",
+      "type": "item",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_5",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "WatchCore6",
+      "type": "item",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_6",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyIngot",
+      "type": "item",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_ingot",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyBlock",
+      "type": "block",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_block",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_ore_block_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_block_ore_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyPickaxe",
+      "type": "tool",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_pickaxe",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyAxe",
+      "type": "tool",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_axe",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloySword",
+      "type": "tool",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_sword",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyShovel",
+      "type": "tool",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_shovel",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyHoe",
+      "type": "tool",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_hoe",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_pickaxe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyAxeRecipe",
+      "type": "recipe",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_axe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloySwordRecipe",
+      "type": "recipe",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_sword_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyShovelRecipe",
+      "type": "recipe",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_shovel_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyHoeRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_hoe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyArmor",
+      "type": "armor",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_armor_helmet_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_armor_body_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_armor_leggings_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarAlloyArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_armor_boots_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "DwarfStarDust",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_dust",
+      "path": "~/Crafting Items"
+    },
+    {
+      "name": "DwarfStarAlloyRecipe",
+      "type": "recipe",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dwarf_star_alloy_recipe",
+      "path": "~/Recipes"
+    },
+    {
       "name": "Tier5WatchEffects",
       "type": "procedure",
-      "sortid": 64,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_5_watch_effects",
@@ -575,7 +880,7 @@
     {
       "name": "Tier4WatchEffects",
       "type": "procedure",
-      "sortid": 65,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_4_watch_effects",
@@ -592,7 +897,7 @@
     {
       "name": "Tier3WatchEffects",
       "type": "procedure",
-      "sortid": 66,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_3_watch_effects",
@@ -609,7 +914,7 @@
     {
       "name": "Tier2WatchEffects",
       "type": "procedure",
-      "sortid": 67,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_2_watch_effects",
@@ -626,7 +931,7 @@
     {
       "name": "Tier1WatchEffects",
       "type": "procedure",
-      "sortid": 68,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "registry_name": "tier_1_watch_effects",
@@ -639,6 +944,116 @@
         ]
       },
       "path": "~/Procedures/WatchLogic"
+    },
+    {
+      "name": "WatchBandRecipe",
+      "type": "recipe",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_band_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchBuckleRecipe",
+      "type": "recipe",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_buckle_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchCore1Recipe",
+      "type": "recipe",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_1_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchCore2Recipe",
+      "type": "recipe",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_2_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchCore3Recipe",
+      "type": "recipe",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_3_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchCore4Recipe",
+      "type": "recipe",
+      "sortid": 111,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_4_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchCore5Recipe",
+      "type": "recipe",
+      "sortid": 112,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_5_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "WatchCore6Recipe",
+      "type": "recipe",
+      "sortid": 113,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_core_6_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Upgrade",
+      "type": "procedure",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "upgrade",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Procedures/WAU"
+    },
+    {
+      "name": "WatchAssemblyUnit",
+      "type": "block",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "watch_assembly_unit",
+      "path": "~/Misc"
     }
   ],
   "variable_elements": [
@@ -684,22 +1099,43 @@
     "en_us": {
       "item.metacrystals.acrobatics_crystal": "Acrobatics Crystal",
       "item.metacrystals.power_crystal": "Power Crystal",
+      "item.metacrystals.dwarf_star_alloy_armor_boots": "DwarfStarAlloy Boots",
+      "item.metacrystals.dwarf_star_alloy_hoe": "DwarfStarAlloy Hoe",
+      "item.metacrystals.aquatic_crystal": "Aquatic Crystal",
+      "key.metacrystals.crystal_cycle_up": "Cycle Crystal Up",
+      "item.metacrystals.tier_5_watch": "Tier 5 Crystal Watch",
+      "item.metacrystals.watch_buckle": "Watch Buckle",
+      "item.metacrystals.magic_crystal": "Magic Crystal",
+      "item.metacrystals.agility_crystal": "Agility Crystal",
+      "item.metacrystals.watch_band": "Watch Band",
+      "item.metacrystals.dwarf_star_alloy_ingot": "DwarfStarAlloy",
+      "item.metacrystals.watch_core_2": "Tier 2 Watch Core",
+      "item.metacrystals.dwarf_star_alloy_axe": "DwarfStarAlloy Axe",
+      "item.metacrystals.watch_core_1": "Tier 1 Watch Core",
+      "item.metacrystals.dwarf_star_alloy_sword": "DwarfStarAlloy Sword",
+      "block.metacrystals.dwarf_star_alloy_block": "Block of DwarfStarAlloy",
+      "item.metacrystals.watch_core_6": "Tier 6 Watch Core",
+      "item.metacrystals.tier_3_watch": "Tier 3 Crystal Watch",
+      "item.metacrystals.watch_core_5": "Tier 5 Watch Core",
+      "item.metacrystals.watch_core_4": "Tier 4 Watch Core",
+      "item.metacrystals.watch_core_3": "Tier 3 Watch Core",
+      "item.metacrystals.dwarf_star_alloy_shovel": "DwarfStarAlloy Shovel",
+      "block.metacrystals.watch_assembly_unit": "Watch Assembly Unit",
       "block.metacrystals.crystal_ore_block": "Crystal Ore Block",
+      "item.metacrystals.dwarf_star_alloy_armor_helmet": "DwarfStarAlloy Helmet",
       "item.metacrystals.tier_6_watch": "Tier 6 Crystal Watch",
+      "item.metacrystals.dwarf_star_alloy_armor_leggings": "DwarfStarAlloy Leggings",
       "item.metacrystals.fighting_crystal": "Fighting Crystal",
       "item.metacrystals.tier_4_watch": "Tier 4 Crystal Watch",
       "item.metacrystals.haste_crystal": "Mining Crystal",
       "item.metacrystals.tier_1_watch": "Tier 1 Crystal Watch",
       "itemGroup.tabcrystal_creative_tab": "Crystal Creative Tab",
-      "item.metacrystals.aquatic_crystal": "Aquatic Crystal",
       "key.metacrystals.crystal_cycle_down": "Cycle Crystal Down",
-      "key.metacrystals.crystal_cycle_up": "Cycle Crystal Up",
-      "item.metacrystals.tier_5_watch": "Tier 5 Crystal Watch",
-      "item.metacrystals.magic_crystal": "Magic Crystal",
       "item.metacrystals.tier_2_watch": "Tier 2 Crystal Watch",
-      "item.metacrystals.agility_crystal": "Agility Crystal",
+      "item.metacrystals.dwarf_star_alloy_pickaxe": "DwarfStarAlloy Pickaxe",
+      "item.metacrystals.dwarf_star_dust": "Dwarf Star Dust",
       "block.metacrystals.crystal_infuser_block": "Crystal Infuser",
-      "item.metacrystals.tier_3_watch": "Tier 3 Crystal Watch"
+      "item.metacrystals.dwarf_star_alloy_armor_chestplate": "DwarfStarAlloy Chestplate"
     }
   },
   "foldersRoot": {
@@ -736,6 +1172,10 @@
           {
             "name": "Crystal Infuser",
             "children": []
+          },
+          {
+            "name": "WAU",
+            "children": []
           }
         ]
       },
@@ -745,6 +1185,14 @@
       },
       {
         "name": "Crystals",
+        "children": []
+      },
+      {
+        "name": "Crafting Items",
+        "children": []
+      },
+      {
+        "name": "Recipes",
         "children": []
       }
     ]

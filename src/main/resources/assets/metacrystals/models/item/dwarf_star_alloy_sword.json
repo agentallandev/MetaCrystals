@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "metacrystals:items/dwarfstaralloy_sword"
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "_fv": 33,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 206,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 20,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #4",
+          "x": 204,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #0",
+          "x": 204,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #1",
+          "x": 168,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #2",
+          "x": 240,
+          "y": 71
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": false,
+          "name": "Slot #3",
+          "x": 204,
+          "y": 107
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Watch Assembly Unit",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Watch Assembly Unit",
+          "x": 164,
+          "y": 22
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "watch_band.png",
+          "use1Xscale": false,
+          "name": "watch_band.png",
+          "x": 169,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "watch_band.png",
+          "use1Xscale": false,
+          "name": "watch_band.png",
+          "x": 241,
+          "y": 72
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "watch_core.png",
+          "use1Xscale": false,
+          "name": "watch_core.png",
+          "x": 205,
+          "y": 36
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "watch_buckle.png",
+          "use1Xscale": false,
+          "name": "watch_buckle.png",
+          "x": 205,
+          "y": 108
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Assemble",
+          "onClick": {
+            "name": "Assemble"
+          },
+          "width": 67,
+          "height": 20,
+          "name": "Assemble",
+          "x": 132,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Upgrade ",
+          "onClick": {
+            "name": "Upgrade"
+          },
+          "width": 61,
+          "height": 20,
+          "name": "Upgrade ",
+          "x": 227,
+          "y": 107
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 9,
+      "sy": 9,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": true
+    }
+  }
+}

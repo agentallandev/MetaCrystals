@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "metacrystals:blocks/dwarfstaralloy_ore_block",
+    "particle": "metacrystals:blocks/dwarfstaralloy_ore_block"
+  }
+}
