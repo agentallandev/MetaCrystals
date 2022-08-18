@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:netherite_scrap"
+  },
+  "addition": {
+    "item": "metacrystals:dwarf_star_dust"
+  },
+  "result": {
+    "item": "metacrystals:deleted_mod_element"
+  }
+}

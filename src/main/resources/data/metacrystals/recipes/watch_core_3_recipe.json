@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:ores/quartz"
+    },
+    "1": {
+      "item": "minecraft:glowstone"
+    },
+    "2": {
+      "tag": "forge:ores/quartz"
+    },
+    "3": {
+      "item": "minecraft:glowstone"
+    },
+    "4": {
+      "item": "metacrystals:power_crystal"
+    },
+    "5": {
+      "item": "minecraft:glowstone"
+    },
+    "6": {
+      "tag": "forge:ores/quartz"
+    },
+    "7": {
+      "item": "minecraft:glowstone"
+    },
+    "8": {
+      "tag": "forge:ores/quartz"
+    }
+  },
+  "result": {
+    "item": "metacrystals:watch_core_3",
+    "count": 1
+  }
+}

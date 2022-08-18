@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "metacrystals:deleted_mod_element"
+    }
+  ],
+  "result": {
+    "item": "metacrystals:deleted_mod_element",
+    "count": 9
+  }
+}

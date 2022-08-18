@@ -15,6 +15,7 @@ import net.minecraft.world.inventory.AbstractContainerMenu;
 import java.util.List;
 import java.util.ArrayList;
 
+import com.github.agentallandev.metacrystals.world.inventory.WatchAssemblyUnitGUIMenu;
 import com.github.agentallandev.metacrystals.world.inventory.Tier6WatchGUIMenu;
 import com.github.agentallandev.metacrystals.world.inventory.Tier5WatchGUIMenu;
 import com.github.agentallandev.metacrystals.world.inventory.Tier4WatchGUIMenu;
@@ -40,6 +41,8 @@ public class MetacrystalsModMenus {
 			(id, inv, extraData) -> new Tier1WatchGUIMenu(id, inv, extraData));
 	public static final MenuType<CrystalInfuserMenu> CRYSTAL_INFUSER = register("crystal_infuser",
 			(id, inv, extraData) -> new CrystalInfuserMenu(id, inv, extraData));
+	public static final MenuType<WatchAssemblyUnitGUIMenu> WATCH_ASSEMBLY_UNIT_GUI = register("watch_assembly_unit_gui",
+			(id, inv, extraData) -> new WatchAssemblyUnitGUIMenu(id, inv, extraData));
 
 	private static <T extends AbstractContainerMenu> MenuType<T> register(String registryname, IContainerFactory<T> containerFactory) {
 		MenuType<T> menuType = new MenuType<T>(containerFactory);

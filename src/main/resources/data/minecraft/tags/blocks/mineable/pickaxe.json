@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "metacrystals:crystal_ore_block"
+    "metacrystals:crystal_ore_block",
+    "metacrystals:dwarf_star_alloy_block"
   ]
 }

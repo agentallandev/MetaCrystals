@@ -1,21 +1,8 @@
 package com.github.agentallandev.metacrystals.procedures;
 
-import net.minecraftforge.items.IItemHandlerModifiable;
-import net.minecraftforge.items.CapabilityItemHandler;
+import net.minecraftforge.eventbus.api.Event;
 
-import net.minecraft.world.level.block.entity.BlockEntity;
-import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.core.BlockPos;
-
-import java.util.function.Supplier;
-import java.util.concurrent.atomic.AtomicReference;
-import java.util.Map;
-
-import com.github.agentallandev.metacrystals.network.MetacrystalsModVariables;
+import javax.annotation.Nullable;
 
 public class FuseCrystalProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, Entity entity) {

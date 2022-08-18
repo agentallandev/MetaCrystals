@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "metacrystals:dwarf_star_dust"
+    },
+    "1": {
+      "item": "metacrystals:dwarf_star_alloy_ingot"
+    },
+    "2": {
+      "item": "metacrystals:dwarf_star_dust"
+    },
+    "3": {
+      "item": "metacrystals:dwarf_star_alloy_ingot"
+    },
+    "4": {
+      "item": "metacrystals:power_crystal"
+    },
+    "5": {
+      "item": "metacrystals:dwarf_star_alloy_ingot"
+    },
+    "6": {
+      "item": "metacrystals:dwarf_star_dust"
+    },
+    "7": {
+      "item": "metacrystals:dwarf_star_alloy_ingot"
+    },
+    "8": {
+      "item": "metacrystals:dwarf_star_dust"
+    }
+  },
+  "result": {
+    "item": "metacrystals:watch_core_6",
+    "count": 1
+  }
+}

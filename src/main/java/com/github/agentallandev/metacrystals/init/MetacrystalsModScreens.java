@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.gui.screens.MenuScreens;
 
+import com.github.agentallandev.metacrystals.client.gui.WatchAssemblyUnitGUIScreen;
 import com.github.agentallandev.metacrystals.client.gui.Tier6WatchGUIScreen;
 import com.github.agentallandev.metacrystals.client.gui.Tier5WatchGUIScreen;
 import com.github.agentallandev.metacrystals.client.gui.Tier4WatchGUIScreen;
@@ -31,6 +32,7 @@ public class MetacrystalsModScreens {
 			MenuScreens.register(MetacrystalsModMenus.TIER_2_WATCH_GUI, Tier2WatchGUIScreen::new);
 			MenuScreens.register(MetacrystalsModMenus.TIER_1_WATCH_GUI, Tier1WatchGUIScreen::new);
 			MenuScreens.register(MetacrystalsModMenus.CRYSTAL_INFUSER, CrystalInfuserScreen::new);
+			MenuScreens.register(MetacrystalsModMenus.WATCH_ASSEMBLY_UNIT_GUI, WatchAssemblyUnitGUIScreen::new);
 		});
 	}
 }
